@@ -13,6 +13,7 @@ const horaMiddleware = (req, res, next) => {
     const minutes = now.getMinutes()
     res.locals.hour = setHour(hour)
     res.locals.minutes = setHour(minutes)
+    res.locals.isTheHour = true
     next()
 }
 
